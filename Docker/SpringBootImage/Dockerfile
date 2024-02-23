@@ -1,7 +1,7 @@
 ARG version=8
 FROM openjdk:${version}
 EXPOSE 9090
-RUN apt-get install update && \
+RUN apt-get update && \
     apt-get install mavem -y
 RUN maven clean install
 ADD . .
