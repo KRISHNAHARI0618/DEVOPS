@@ -1,0 +1,43 @@
+Json Data Types:
+
+Number : { "age" : 20 }
+
+String : { "name" : "Peddireddy"
+
+Boolean : { "Status" : True
+
+Null { "MiddleName" : Null }
+
+Object : { "Employee" : { "name" : "Peddireddy","age": 40, "City" : "newyork" } }
+
+Array :  "Names": [
+            "Peddireddy",
+            "Hari",
+            "Vardhan",
+            "Reddy"
+        ]
+
+
+Json Path:
+
+JsonPath is a Query Language for Json similar to XPath for Xml
+
+JSONPath Expression 
+
+$ Represents Root Element
+@ Current Element
+* Represnts All Elements
+. Represents Child Element/Operator
+[] Represnts Iterate over the Elemets in Array
+?() Applies Filter 
+
+
+Load Json To python :
+
+json.loads(json_name)
+
+json.dumps(data)
+
+
+
+

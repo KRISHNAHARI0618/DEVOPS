@@ -1,0 +1,240 @@
+What is Data Structure:
+
+Data Structures are the different ways of organizing data on your computer that can be used effectively
+
+What is an Algorithms:
+
+Set of instructions to complete/Perform the task
+
+Algorithms For daily Use:
+Step1: Go to Bus Stop
+Step2: Catch a Bus
+Step3: Go to School
+
+Famous Algorithms:
+
+1: Compressions Algorithms - Video and Audio Platforms
+2: Graph Algorithms for Shortest Paths
+3: Optimization and Scheduling Algorithms for NASA
+
+Why Data Structures and Algorithms are important:
+Data Processing
+input data --> Processing Operations --> Output
+
+Processing Operations optimization is important
+
+- Problem-Solving Skills
+- Fundamental Concepts of Programming in limited time.
+
+Types of Data Structures:
+
+Primitive and Non-Primitive Data Structures
+
+Primitive:
+Cannot Be Broken
+Fixed Size and Smaller Size
+Simpler DS
+Simple Operations
+In Memory as simple values
+
+
+ Integer -- 123
+ Float --> 2.34
+ String --> "StringName"
+ Boolean --> True
+
+Non-Primitive: Two Types Linear and Non-Linear
+
+Can Be Broken
+Elastic Size and Larger Size
+Complex Data Structure
+Complex Operations Like Data Processing
+In Memory as Complex values
+
+Linear Data Structures:
+
+Arranged in Sequential and order is important
+Connected between before element
+Hierarchical
+
+List
+Tuple
+Array
+Linked list
+Stack
+Queue
+
+Non-Linear Data Structures:
+
+Set
+Dictionary
+Tree
+Graph
+
+Types of Algorithms
+
+Sorting --> To Sort Ascending or Descending Order
+
+Searching --> To find Specific Value in a Data Set
+
+Graph --> To Work with data that can be Represented graph
+
+Dynamic Programming --> To Solve Problem by Breaking them down into smaller sub-problems
+
+Divide and Conquer Problems --> To Solve problems by breaking them down into smaller
+sub-problems, solving each sub-problem independently and then combing the results
+
+Recursive Algorithms: Used for Smaller that are repeated in nature
+
+&&Day ||02: % Big O Notation
+
+What is Big O Notation:
+
+Big O is a Language and Metric we use to describe the efficiency of algorithms
+
+What is Time Complexity:
+
+a way of showing the run time of a Function or an application increases as the size of input increases
+
+Big O Notations:
+Worst Case, Average Case, Best Case
+
+Worst Case = Big O
+- Its Complexity is less and Time taken is more equal to worst
+
+Average Case = Theta
+- Its Complexity is average and Time taken would be moderate
+
+Best Case = Omega
+- Complexity of Program Is more and Time taken would be Less to execute and the best of all types
+
+Run Time Complexities:
+
+Constant Run Time Complexity # O(1)
+# Constant Run Time Complexity O(1) it is constant all the time
+
+Linear Run Time Complexity #O(n)
+- # Linear Run Time Complexity as The for loop increase the Operations increases and time increases
+
+Drop Constants # O(n)
+- # Eliminate the asymptotic Behavior
+- # It is Very Possible That O(n) code is Faster Than O(1) Code
+- # Different Computers with different architecture has different constant factors
+- # Different Algorithms with the same basic idea and Computational complexity might have slightly different constants
+- # as N --> Infinity are not a Really big deal
+
+
+Each For Loop Represents n Complex
+Nested Loop Represents N^2
+
+Each Separate Loop Will be Added
+Each Loop Inside another Loop Represents Multiplication
+for (n)
+ for (n)
+  for (n)
+  = n*n*n = n^3
+
+N : Represents No of Operations
+if n Represents value it represents no of operations
+
+Big O(n^2)
+
+Drop Non Dominant Terms: Big O(n^2 + n) = Big O(n^2)
+
+Big O(log N) : Divide the Function Into Different Parts
+- And Search For Element
+- Divide and Conquer
+- Count the Number of Divisions of Functions
+
+Each Array Can be divide into two parts each time hence we will take 2
+
+How many Time the array is Divide is == 3
+each time hpw many parts divided == 2
+2^3 = 8 ==> log2^3 = 3
+
+Space Complexity: Amount of Time is also important
+
+Arrays: Arrays are non native data structures in Python
+- More memory efficient than list
+- same data type
+- contiguous format of an array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: service-pod
+  labels:
+    env: production
+    ser: clusip
+spec:
+  containers:
+    - name: nginx-pod
+      image: nginx
+      ports:
+      - name: nginx-service
+        containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: service
+spec:
+  # type: ClusterIp
+  selector:
+    env: production
+    ser: clusip
+  ports:
+  - name: ngin
+    protocol: "TCP"
+    port: 80 # This is related to service
+    targetPort: nginx-service # Related to Container

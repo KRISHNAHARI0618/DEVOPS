@@ -784,8 +784,16 @@ Package and deploy applications using Helm charts. Helm simplifies the deploymen
 10: Backup and Disaster Recovery:
 
 | Kubernetes Security Considerations:
+1: Secure Kubernetes API Server
+2: Implement Network Policies
+3: Implement RBAC
+4: Image Security
+5: Cluster Monitoring
 
 1: API Server Security:
+Kube-api server is a pod
+TLS Certifications
+lock symbol is Certified website
 Secure the Kubernetes API server using authentication and authorization mechanisms. Enable audit logging for better visibility.
 
 2: Image Security:

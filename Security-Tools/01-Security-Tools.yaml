@@ -1,0 +1,19 @@
+1: KICKS : Infra Code security tool
+2: Dockle : Docker Best Practices
+3: Prowler : Cloud Security
+4: Trivy : File System /Docker Image /More
+5: Owasp: Dependency Check
+
+
+
+
+
+
+1: SonarQube - Static Code Analysis
+2: Owasp Dependency plugin - Java Code Security Tool
+3: Trivy - Docker Image Checker
+
+
+./bin/dependency-check.sh --out /root/directory/ --scan <file-to-scan>
+
+dependencyCheck additionalArguments '--scan target/', odcInstallation: 'DP-check' dependencyCheckPublisher pattern: '**/dependency-check-report.xml'

@@ -1,0 +1,124 @@
+COURSE CONTENT
+Course Introduction (02:26)
+
+Observability Fundamentals
+
+Intro to Observability (07:12)
+SLO/SLA/SLI (03:34)
+
+Prometheus Fundamentals
+20 Topics
+
+Prometheus Use Case (02:19)
+Prometheus Basics (02:21)
+Prometheus Architecture (08:30)
+Prometheus Installation (05:29)
+Prometheus Installation systemd (05:50)
+Prometheus Installation Demo (06:47)
+Node Exporter (03:08)
+Node Exporter systemd (04:34)
+Prometheus Configuration (08:51)
+
+Authentication/Encryption (08:17)
+
+Metrics (14:37)
+Metrics Quiz
+
+Exploring Expression Browser (03:35)
+Prometheus in Docker Container (01:44)
+
+Intro to PromTools (02:10)
+Monitoring Containers (03:10)
+
+PromQL
+16 Topics
+
+Introduction (04:55)
+Selectors & Matchers (05:30)
+Modifiers (03:17)
+PromQL Demo (04:56)
+
+Operators (07:32)
+Vector Matching (14:35)
+Aggregation (05:31)
+
+Functions (09:33)
+Subquery (04:49)
+Histogram/Summary (13:23)
+
+Recording Rules (09:40)
+
+HTTP API (05:24)
+Dashboarding & Visualization
+5 Topics
+
+Introduction (01:24)
+Expression Browser (03:46)
+Console Templates (10:19)
+
+Feedback – Prometheus Certified Associate
+Application Instrumentation
+7 Topics
+
+Introduction (01:36)
+Instrumentation-basics (05:31)
+Labels (03:54)
+Histogram/Summary (03:20)
+Gauge (01:15)
+Best Practice (04:30)
+Lab – Application Instrumentation
+Service Discovery
+
+Introduction (02:00)
+File (02:11)
+AWS (05:43)
+Re-Labeling (13:58)
+Re-Labeling Demo (17:46)
+Lab – Re-Labeling
+Push Gateway
+
+Introduction (00:52)
+Installation (03:10)
+Pushing Metrics (07:04)
+Client Library (01:22)
+
+
+Alerting
+11 Topics
+
+Introduction (05:33)
+Labels & Annotations (02:14)
+Alertmanager Architecture (02:11)
+Alertmanager Installation (02:04)
+Alertmanager Installation Systemd (04:55)
+Lab – Alertmanager Installation
+Configuration (07:56)
+Receivers & Notifiers (08:12)
+Alertmanager Demo (16:29)
+Silences (01:21)
+Lab – Alertmanager
+
+Monitoring Kubernetes
+12 Topics
+
+Introduction (09:55)
+Installing Helm Chart (06:07)
+Prometheus Chart Overview (10:14)
+Connecting To Prometheus (02:40)
+Prometheus Configuration (06:09)
+Deploy Demo Application (05:40)
+Additional Scrape Configs (03:12)
+Service Monitors (10:27)
+Adding Rules (02:56)
+Alertmanager Rules (07:51)
+Lab – Kubernetes & Prometheus
+Feedback – Prometheus Certified Associate
+
+Conclusion
+5 Topics
+
+Conclusion (00:51)
+Lab – PCA Mock Exam 1
+Lab – PCA Mock Exam 2
+Registering for Exam (01:12)
+Article: PCA Exam Details

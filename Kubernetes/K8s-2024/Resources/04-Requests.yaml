@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: request-pod
+  namespace: peddireddy
+spec:
+  containers:
+    - name: nginx-pod
+      image: nginx
+      resources:
+        requests: # Soft-Limit
+          memory: "128Mi"
+          cpu: "100m"
+        limits: # Hard Limit
+          memory: "256Mi" # memory = 1 mb or gb
+          cpu: "200m" # cpu = 1 or 1000m

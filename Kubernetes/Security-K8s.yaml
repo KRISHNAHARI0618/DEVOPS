@@ -47,6 +47,9 @@ metrics/ storage/ logs/ networking.k8s.io/
 
 named apis --> api Groups --> Resources(objects) --> actions or verbs
 
+How to Secure K8s Clusters :
+
+
 Creating the Role Based Access Control:
 
 Role

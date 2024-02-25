@@ -1,0 +1,11 @@
+Docker Compose:
+version: 'version'
+services:
+configs:
+networks:
+secrets:
+volumes:
+
+
+
+- Compose Comprises of multiple containers to deploy a microservices

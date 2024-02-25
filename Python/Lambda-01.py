@@ -6,3 +6,8 @@ for i in x:
   name1 = lambda i : i%2 == 0
   print(name1(i))
 
+def main(a,b):
+  myresult = lambda a,b : a*b
+  print(myresult(a,b))
+
+main(10,20)
