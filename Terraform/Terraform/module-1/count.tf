@@ -1,4 +1,4 @@
-resource "aws_instance" "jenkins" {
+resource "aws_instance" "jenkins1" {
   count = 3
   ami = "ami-0f3c7d07486cad139"
   instance_type = "t2.micro"
@@ -8,4 +8,4 @@ resource "aws_instance" "jenkins" {
 
 # Loops
 # Count = 10
-# 
+#
