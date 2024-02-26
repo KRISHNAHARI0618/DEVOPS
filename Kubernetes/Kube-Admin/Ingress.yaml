@@ -1,8 +1,12 @@
 Need To Learn:
+Types Of LoadBalancers
+Types Of Ingress Services
+Taints & Tolerations
 
-    Types Of LoadBalancers
-    Types Of Ingress Services
-    Taints & Tolerations
+Types of Ingress Services:
+1: Nginx
+2: HAProxy
+3: Traefik
 
 Important Topics:
 
@@ -24,13 +28,13 @@ Taints are the labels you apply to the node to allow specific pods to enter and 
 kubectl taint nodes <node-name> <taint-key>=<taint-value>:<taint-effect>
 
 Node Affinity :
-  We label the node and deploy the desired pod in that node
+We label the node and deploy the desired pod in that node
 Services:
-    Claster Ip
-    Node Port
-    Load Balancer
+Cluster-Ip
+Node Port
+Load Balancer
 
-Methods follows kubeproxy to distribue Ip address is IP Tables
+Methods follows kubeproxy to distribute Ip address is IP Tables
 
 An Abstract Way to expose an application running on set of pods as a network
 
@@ -38,51 +42,49 @@ Load Balancer Vs Ingress Controllers
 Ingress Controllers vs NodePort
 
 Load Balancer Type Services:
-    Metal LB Project which has implemeted load Balanced Service type for onpremises Kubernetes
+Metal LB Project which has implemented load Balanced Service type for on-premises Kubernetes
 
 Ingress Controllers:
+GCE,Nginx
 
 What is Ingress:
-    Deployment
+Deployment
 Why we need Ingress :
-    Ingress Provides Two Things
-    Large Scale applications
-For Large Scale Aplications we need external ip address to communicate inside as well as outside for that we need to create lots of external ip address that will cost more amount to the organization
+Ingress Provides Two Things
+Large Scale applications
+For Large Scale Applications we need external ip address to communicate inside as well as outside for that we need to create lots of external ip address that will cost more amount to the organization
 
 hence Ingress Controller will create one ip address with certain rules
 
-Ingress Define Routing
-    can expose cluster to outside
-    Path Based Rule
-    Session Based Rule
-    Course Based Rule
+Ingress Define Routing: can expose cluster to outside based on three rules
+
+Path Based Rule
+Session Based Rule
+Course Based Rule
 
 Ingress Controllers:
-    In order for the ingress resource to work the Cluster must have an ingress controller running
+  In order for the ingress resource to work the Cluster must have an ingress controller running
 By default it will create Load Balancer
 
 fi load balancer : Ingress Based Load Balancer
---------------------------------------------------
 
- Simple Ingress manifest file:
- .............................
-
+Simple Ingress manifest file:
 
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: test-Ingress
+name: test-Ingress
 spec:
-  defaultBackend:
-    service:
-      name: test
-      port:
-        number: 80
----------------------------------------------------
+defaultBackend:
+  service:
+    name: test
+    port:
+      number: 80
+
 Ingress Controller Types:
-    Host-Based
-    Path-Based
-    Wild-Card Ingress
+Host-Based
+Path-Based
+Wild-Card Ingress
 
 Demo-Part:
 Ingress Controller
@@ -95,24 +97,24 @@ hf proxy Configuration
 
 
 "" Wild Card Ingress Controller: ""
-`````````````````````````````
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: test-wildcard
+name: test-wildcard
 spec:
-  rules:
-  - host: "*.bar.com"
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: http-svc
-            port:
-              number: 80
----------------------------------------------------
+rules:
+- host: "*.bar.com"
+  http:
+    paths:
+    - path: /
+      pathType: Prefix
+      backend:
+        service:
+          name: http-svc
+          port:
+            number: 80
+
 Ingress Controllers with SSL/TLS Security Level
 At layer 4 Level data encryption and decryption will occur
 
@@ -129,9 +131,9 @@ SSL Bridging: L7 Load Balancing
 decrypts the data from the packet coming from client when it arrives at the load balancer and the data is sent to the destination with re encrypted format
 
 OpenShift Routes:
-    SSL OffLoading = Edge Termination
-    SSL Bridge == Re-Encrypt Termination
-    SSL PassThrough = Passthrough Termination
+SSL OffLoading = Edge Termination
+SSL Bridge == Re-Encrypt Termination
+SSL PassThrough = Passthrough Termination
 
 Ingress Controllers:
 
@@ -143,21 +145,21 @@ metadata:
   name: ingress-control
   namespace: roboshop
 spec:
-  rules:
-  - http:
-      paths:
-      - path: /watch
-        pathType: Prefix
-        service:
-          name: watch-service
-          port:
-            number: 80
-      - path: /wear
-        pathType: Prefix
-        service:
-          name: wear-service
-          port:
-            number: 8080
+rules:
+- http:
+    paths:
+    - path: /watch
+      pathType: Prefix
+      service:
+        name: watch-service
+        port:
+          number: 80
+    - path: /wear
+      pathType: Prefix
+      service:
+        name: wear-service
+        port:
+          number: 8080
 
 HostName Based Traffic Routing:
 
@@ -167,25 +169,27 @@ metadata:
   name: ingress-control
   namespace: roboshop
 spec:
-  rules:
-  - host: watch.joindevops.online.com
-    - http:
-        paths:
-        - path: /watch
-          pathType: Prefix
-          service:
-            name: watch-service
-            port:
-              number: 80
-  - host: wear.joindevops.online.com
-    http:
+rules:
+- host: watch.joindevops.online.com
+  - http:
       paths:
-      - path: /wear
+      - path: /watch
         pathType: Prefix
         service:
-          name: wear-service
+          name: watch-service
           port:
-            number: 8080
+            number: 80
+- host: wear.joindevops.online.com
+  http:
+    paths:
+    - path: /wear
+      pathType: Prefix
+      service:
+        name: wear-service
+        port:
+          number: 8080
+
+First Deploy The ingress Deployment and Configure all traffic rule in config map and Start that service
 
 
 

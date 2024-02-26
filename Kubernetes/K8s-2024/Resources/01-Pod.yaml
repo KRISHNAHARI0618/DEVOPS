@@ -1,9 +1,0 @@
-apiVersion: v1
-kind: Pod
-metadata:
-  name: my-first-pod
-  namespace: peddireddy
-spec:
-  containers:
-  - name: my-container
-    image: nginx:latest

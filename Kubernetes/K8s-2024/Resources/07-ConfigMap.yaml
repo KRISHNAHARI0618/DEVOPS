@@ -1,9 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: course-config
-  namespace: peddireddy
-data:
-  course: DevOps
-  duration: 120hrs
-  trainer: simple

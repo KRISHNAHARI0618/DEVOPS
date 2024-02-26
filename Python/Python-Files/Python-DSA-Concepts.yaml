@@ -38,10 +38,10 @@ Simple Operations
 In Memory as simple values
 
 
- Integer -- 123
- Float --> 2.34
- String --> "StringName"
- Boolean --> True
+Integer -- 123
+Float --> 2.34
+String --> "StringName"
+Boolean --> True
 
 Non-Primitive: Two Types Linear and Non-Linear
 
@@ -65,28 +65,22 @@ Stack
 Queue
 
 Non-Linear Data Structures:
-
 Set
 Dictionary
 Tree
 Graph
 
-Types of Algorithms
-
+Types of Algorithms:
 Sorting --> To Sort Ascending or Descending Order
-
 Searching --> To find Specific Value in a Data Set
-
 Graph --> To Work with data that can be Represented graph
-
 Dynamic Programming --> To Solve Problem by Breaking them down into smaller sub-problems
-
 Divide and Conquer Problems --> To Solve problems by breaking them down into smaller
 sub-problems, solving each sub-problem independently and then combing the results
 
 Recursive Algorithms: Used for Smaller that are repeated in nature
 
-&&Day ||02: % Big O Notation
+| Day | 02: % Big O Notation
 
 What is Big O Notation:
 
@@ -96,32 +90,35 @@ What is Time Complexity:
 
 a way of showing the run time of a Function or an application increases as the size of input increases
 
+What is Space Complexity:
+More Memory and Less Memory
+
 Big O Notations:
 Worst Case, Average Case, Best Case
 
 Worst Case = Big O
-- Its Complexity is less and Time taken is more equal to worst
+Its Complexity is less and Time taken is more equal to worst
 
 Average Case = Theta
-- Its Complexity is average and Time taken would be moderate
+Its Complexity is average and Time taken would be moderate
 
 Best Case = Omega
-- Complexity of Program Is more and Time taken would be Less to execute and the best of all types
+Complexity of Program Is more and Time taken would be Less to execute and the best of all types
 
 Run Time Complexities:
 
-Constant Run Time Complexity # O(1)
-# Constant Run Time Complexity O(1) it is constant all the time
+Constant Run Time Complexity: # O(1)
+Constant Run Time Complexity O(1) it is constant all the time
 
-Linear Run Time Complexity #O(n)
-- # Linear Run Time Complexity as The for loop increase the Operations increases and time increases
+Linear Run Time Complexity: #O(n):
+Linear Run Time Complexity as The for loop increase the Operations increases and time increases
 
-Drop Constants # O(n)
-- # Eliminate the asymptotic Behavior
-- # It is Very Possible That O(n) code is Faster Than O(1) Code
-- # Different Computers with different architecture has different constant factors
-- # Different Algorithms with the same basic idea and Computational complexity might have slightly different constants
-- # as N --> Infinity are not a Really big deal
+Drop Constants: # O(n)
+Eliminate the asymptotic Behavior
+It is Very Possible That O(n) code is Faster Than O(1) Code
+Different Computers with different architecture has different constant factors
+Different Algorithms with the same basic idea and Computational complexity might have slightly different constants
+as N --> Infinity are not a Really big deal
 
 
 Each For Loop Represents n Complex

@@ -34,9 +34,7 @@ cat /etc/nsswitch.conf
 
 
 Name Resolution:
-
 . --> Root
-
 .com: top level domain
 
 Record Types:

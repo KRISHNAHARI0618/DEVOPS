@@ -382,6 +382,8 @@ A ConfigMap is an API object used to store nonconfidential data in key value pai
 Secrets: To store username and passwords securely in the environment variables
 
 Kubernetes Services:
+Services enable connectivity between pods and external
+
 To access the pods from internet we need some kind of services to expose
 Service is a method of exposing the application to the external world
 
@@ -403,6 +405,12 @@ To Balance the load > Deployment and ReplicaSet
 
 Target Port is the Container Port where we have specified in the Pod spec
 
+kubectl get services
+
+Pod Port: target port
+Port: Service Port
+NodePort: Node Port (30,000 to 32767)
+
 NodePort:
 One Port number for all the Nodes and creates cluster ip which is connected with all three node ports
 
@@ -414,6 +422,15 @@ User > NodePort > Node 1/Node 2/Node 3 > ClusterIP > Pod > Containers
 LoadBalancer:
 where the load is distributed based on the traffic incoming requests
 user > Route53 > LoadBalancer > Nodes (1 etc..) > ClusterIP > Pods > Containers
+
+Ingress in Kubernetes:
+Proxy In On-Premise Service
+Load Balancers in Cloud
+1: Application Load Balancers
+2: Network LoadBalancers
+
+| Service vs Ingress
+
 
 Sets: To deploy an application we need to make the set of pods because there is no manual intervention should happen to create the multiple containers when the user request has received heavily to the application
 There are 4 Types of SETS Available:
