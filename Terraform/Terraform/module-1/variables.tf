@@ -10,7 +10,7 @@ variable "ami" {
 }
 
 variable "sg_cidr" {
-  type = list()
+  type = list
   default = ["0.0.0.0/0"]
   description = "This is Allowing All Values"
 }
