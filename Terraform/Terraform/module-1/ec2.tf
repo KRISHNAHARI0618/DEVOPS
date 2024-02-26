@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 resource "aws_iam_user" "hari" {
-  name = "Peddireddy"
+  name = var.name
   path = "system"
 
 }
@@ -21,4 +21,15 @@ data "aws_iam_users" "users" {}
 
 output "users" {
   value = aws_iam_user.hari.arn
+}
+
+variable "name" {
+  type = string
+  default = "peddireddy"
+  description = "This Is First Data Element"
+}
+
+resource "aws_instance" "jenkins" {
+  ami = "ami-03265a0778a880afb"
+  instance_type = "t2.micro"
 }
