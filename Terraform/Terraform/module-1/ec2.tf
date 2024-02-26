@@ -14,7 +14,7 @@ provider "aws" {
 
 resource "aws_iam_user" "hari" {
   name = var.name
-  path = "system"
+  path = "/system/"
 
 }
 data "aws_iam_users" "users" {}
