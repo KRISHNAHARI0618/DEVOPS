@@ -1,15 +1,12 @@
 Prometheus Alerting and Monitoring:
 
-Horizantal Pod AutoScaler:
+Horizontal Pod AutoScaler:
   based on the cpu utilization ,memory utilization , network utilization
 Ingress Controller:
   Classic Load Balancer and Application Load Balancer
   Application Load Balancer is Layer 7 Type
 
-ArgoCd:
-
-First Expose it to load Balancer
-
+ArgoCd: First Expose it to load Balancer
 Then get the password:
   fAMxXfZxFOJZJpRM
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
@@ -35,7 +32,6 @@ Application Metrics and Cluster Metrics
 https://devopscube.com/setup-prometheus-monitoring-on-kubernetes/
 
 Synchronizing state of grafana-server.service with SysV service script w/lib/systemd/systemd-sysv-install.
-
 
 Executing: /usr/lib/systemd/systemd-sysv-install enable grafana-server
 
