@@ -102,7 +102,7 @@ Why GitOps-ArgoCD:
   -- Current Status
   -- Real Time Updates
 - Git is the Source of Truth
-- Devs and DevOps will Just Commit The Code in Git Only
+- Dev's and DevOps will Just Commit The Code in Git Only
 - Keep Your Cluster in Sync with Git
 - Easy RollBack
 - More Security
@@ -113,7 +113,7 @@ ArgoCd Best Practices:
 - Immutable Manifests
 - Comment Replicas when your application needs to use horizontal pod auto scalar
 - Plan for secrets
-  - dont store plain secrets in git
+  - don't store plain secrets in git
   - within git
     -- sealed secrets
     -- Sops

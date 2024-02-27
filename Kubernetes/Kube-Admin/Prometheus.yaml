@@ -39,9 +39,7 @@ Synchronizing state of grafana-server.service with SysV service script w/lib/sys
 
 Executing: /usr/lib/systemd/systemd-sysv-install enable grafana-server
 
-
 Created symlink /etc/systemd/system/multi-user.target.wants/grafana-servce →
-
 
 /usr/lib/systemd/system/grafana-server.service.
 
@@ -239,7 +237,6 @@ Operators:
 - stdenv
 
 Functions:
-
 - Built-in Functions
 - Rate Function -- rate()
 - irate Function
@@ -284,8 +281,6 @@ Capturing Kubernetes Infrastruture with data
 Counter_Type_Metrics:
 - counter()
 
-
-
 Prometheus :
 
 Alerting Overview
@@ -302,7 +297,7 @@ Genric PlaceHolders :
 
 Operating System Services:
 
-- Proemetheus
+- Prometheus
 - Pushgateway
 - Alert Manager
 - Exporters
@@ -330,19 +325,16 @@ Jons and Instances:
 
 - Jobs: Collection of Instances
 
-
-
 Prometheus-Architecture:
 
 - Prometheus Server: Collects all inofrmations
 - TSDB : Where it connects with origin host os HardDisk/SSD To store the metrics in Time-Series DataBase
 - Retrieval : Pull Metrics from Jobs/Instnaces/Exporters
 - Alert Manager: Where it can push the notifications to many services to slack/pagerduty/teams/mails etc ..
-- PromQL Quiries: A Queires where we run and get the UP
+- PromQL Queries: A Queries where we run and get the UP
 - HTTP Server: Where we can Acces the web ui for Prometheus from browser
 - PushGateway : For supporting short lived Jobs
 - Service Discovery : Where it will be cresting the Nodes from where the Prometheus Can fetch the metrics based on utilizations
-
 
 Servers/Services in Prometheus:
 - Prometheus Server
@@ -354,48 +346,3 @@ Servers/Services in Prometheus:
 - Grafana Server
 
 How do we manage and monitor spring boot application in production using prometheus:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

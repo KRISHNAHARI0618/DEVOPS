@@ -31,3 +31,4 @@ For Clause:
 
 prometheus will get reloaded :
 kill -HUP <PID of prometheus>
+kill sigup <pid>

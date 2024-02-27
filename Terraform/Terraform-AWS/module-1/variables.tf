@@ -14,3 +14,44 @@ variable "sg_cidr" {
   default = ["0.0.0.0/0"]
   description = "This is Allowing All Values"
 }
+
+variable "for_each_instances" {
+  type = map
+  description = "This is For Each Instance Loop"
+  default = {
+    mongodb = "t3.medium"
+    sql = "t3.medium"
+    user = "t2.micro"
+    cart = "t2.micro"
+    shipping = "t2.micro"
+  }
+}
+
+variable "ingress_rules" {
+  type = list
+  description = "This is Ingress rules"
+  default = [
+    {
+      description = "Allow-ssh-port"
+      from_port = 80
+      to_port = 80
+      cidr_blocks = ["0.0.0.0/0"]
+      protocol = "tcp"
+    },
+    {
+      description = "Allow-ssh-port"
+      from_port = 22
+      to_port = 22
+      cidr_blocks = ["0.0.0.0/0"]
+      protocol = "tcp"
+    },
+    {
+      description = "Allow-ssh-port"
+      from_port = 443
+      to_port = 443
+      cidr_blocks = ["0.0.0.0/0"]
+      protocol = "tcp"
+    }
+  ]
+
+}
