@@ -184,11 +184,11 @@ Never
 kubelet will download and fetch the images from the registry
 to use the same version of image replace <image:tag> with <image@digest>
 
-% Types of Containers in K8s:
+% Types of Patterns/Multi-Containers Pods in K8s:
 
+Side Car Pattern/Container : Useful for Logging Utilities, Sync Services, Watchers, Monitoring Agents
 application containers: Main Application Containers
 init containers: Starts to set up the config files ,downloading data etc..
-side car containers: Shipping The log data
 helper containers: Data Migrations, Backups, Maintenance activities.
 builder containers: are used to building and packaging the applications
 proxy containers: Intermediaries between containers and external services

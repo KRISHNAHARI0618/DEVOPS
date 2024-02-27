@@ -474,9 +474,26 @@ type: volume
 *****
 
 Docker Best Practices:
-1: Creating Named Volumes for each container and persist logs of each container to central logging system
+1: Use Official Images
+2: Pin Version (Specific Version Number)
+3: Use DistroLess Images
+4: Use Multi-Stage Build
+5: Use Copy Command over ADD Instruction
+6: Parameterize Everything (Use Args for parameters)
+7: Set Workdir
+8: Use Cache
+9: Minimize the layers
+10: Clean Up Cache
+11: Avoid HardCoded Credentials (Use Environment Variables)
+12: use Non-Root User (nonrootuser)
+13: Specify The ports for Containers
+14: USE Entrypoint to set the default process
+15: Creating Named Volumes for each container and persist logs of each container to central logging system
+
+# Order Matters in Caching
+# remove unnecessary dependencies --no-install-dependencies
+# remove package manager cache
 2: Create Networking for each application
-3: Use Official Or Distroless  Images
 4: Try To reduce the memory using multistage building etc..
 5: By Using Office Alpine images memory will be reduces to almost 100 percent
 8: Use Docker Security Scanning
@@ -497,6 +514,11 @@ Docker Security Updates:
 6: network segmentation
 7: Runtime security
 8: Secure Docker Daemon
+
+use HadoLint to check the docker file and images securities
+
+Container Vulnerability Scanning:
+1: Docker Images / Containers are benifial in scaling,Portability,efficiency
 
 How to Restrict Access From one container to another container in  same network:
 1: Using Network Commands
@@ -783,9 +805,12 @@ sudo usermod -aG docker <add user>
 
 to reload everything added to docker group: newgrp docker
 
-9739815899 mohan 
-span idea
+Trivy: Docker Scanning Tool
+File System , Images, Repositories, Terraform Configurations etc..
 
+Export Application Binaries using Docker Export :
+
+docker export --output= . .
 
 
 
