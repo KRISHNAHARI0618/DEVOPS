@@ -1,7 +1,3 @@
-#! /bin/bash
-# print 1 to 100
-# prime number are divided by 1 and itslef and iteself 2,5,7
-
 #!/bin/bash
 
 # Function to check if a number is prime
