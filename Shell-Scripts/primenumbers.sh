@@ -17,6 +17,7 @@ is_prime() {
     return 0 # Prime
 }
 
+#This is my Second File
 # Get user input for the range
 echo -n "Enter the range (e.g., 1 100): "
 read start end
