@@ -61,7 +61,7 @@ How many ways we can use change replica set once after we declared as some
 Even through mentioning as 2 it is not coming down
 
 How to change the labels for kubernetes deployment manifest:
-kubectl patch <resource_type> <resource_name> -p '{"metadata":{"labels":{"key":"new_value"}}}'
+kubectl patch <resource_type> <resource_name> -p '{"metadata":{"labels":{"key":"new_value"}}'
 
 What are process involved while running the pod :
 1: Create a Pod Specification file
