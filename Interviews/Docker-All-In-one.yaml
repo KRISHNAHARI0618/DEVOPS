@@ -813,6 +813,16 @@ Export Application Binaries using Docker Export :
 docker export --output= . .
 
 
+Build Tools in Docker:
+
+Buildx : Cli tool that provides a user interface for working with builds
+BuildKit: daemon process that executes the build workloads
+Builders: is build kit daemon that you can use to run your builds
+
+
+
+
+
 
 
 
