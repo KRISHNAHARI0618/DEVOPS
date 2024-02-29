@@ -1,4 +1,4 @@
-Certified Kuberenetes  Commands:
+Certified Kubernetes  Commands:
 - kubectl
 - json
 - tmux
@@ -20,7 +20,7 @@ Docker Vs Containerd:
 - Container Runtime Interface
 - containerd is a run time environement for both docker and kubernetes
 
-Conatinerd cli:
+Containerd cli:
 - ctr command line interface
 - ctr images
 - ctr run
@@ -32,7 +32,6 @@ nerdctl CLI:
 - ctr - CLI used to interact with conatinerd Environment
 
 OCI Standards:
-
 - image spec
 - Runtime spec
 
@@ -132,11 +131,11 @@ Namespaces:
 Imperative and Declarative Approach:
 - Imperative ==  OLD TAXI Model
   - kubectl commands is used in Imperative approach
-  - scale, set,edit,create,expose,run,debug, replace, replace --force 
+  - scale, set,edit,create,expose,run,debug, replace, replace --force
 - Declarative == New TAXI MOdel(uber/OLA)
   - yaml files should be stored in GitHUb
   - implement change review and version Control
-  - 
+  -
 
 kubectl apply command:
 - to manage objects in a declarative way
@@ -196,10 +195,10 @@ tolerations:
 Node Selectors:
 ---------------
 
-- Based on The metrics nodes will divide 
+- Based on The metrics nodes will divide
 - Data Processing Workloads need heavy processing servers
 - labeling the nodes makes it usefull that which type of application or pod should run on which kind of Server/Node
-- Command: 
+- Command:
 - kubectl label nodes <node-name> <label-key>=<label-value>
 In Pod Specification:
 - We need to mention that nodeSelector:
@@ -231,7 +230,7 @@ NodeAffinity vs Taints vs Tolerations
 Resources & Requirements:
 
 Resources:
-- Every pod in a node should require some cpu,memory and data to perform speciic actions and to store data 
+- Every pod in a node should require some cpu,memory and data to perform speciic actions and to store data
 
 spec:
   containers:
@@ -240,7 +239,7 @@ spec:
     requests:
       memory: "4Gi"
       cpu: "2 m"
-    limits: 
+    limits:
       memory: "2Gi"
       cpu : "1m"
 
