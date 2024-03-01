@@ -21,3 +21,15 @@ def arms(number):
     print(False)
 
 arms(number)
+
+
+# def armstrongNumber(number):
+#   return sum(int(digit)**len(str(number)) for digit in str(number)) == number
+
+# number = 153
+# if armstrongNumber(number):
+#   print(f"{number} is a Armstrong number")
+# else:
+#   print(f"{number} is not a armstrong number")
+
+
