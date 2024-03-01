@@ -20,6 +20,21 @@ There are Two Supported ways to configure the Filtering and Scoring the Nodes
 1: Scheduling Policies: Configuring the predicates for Filtering and priorities for Scoring
 2: Scheduling Profiles: allow you to configure the plugins that implement the different scheduling stages like QueueSort,Filter,Score,Bind,Reserve,Permit etc..
 
+Assigning Pods to Nodes:
 
+1: Node Selectors Matching to the node labels
+2: Affinity and Anti-Affinity
+3: nodeName
+4: Pod Topology
 
+Node Isolation /Restriction:
+Node Restriction
+
+Node Selector: Selecting the node for Pods To schedule
+Affinity:
+Node Affinity
+requiredDuringSchedulingIgnoredDuringExecution
+prefferedDuringSchedulingIgnoredDuringExecution
+
+Pod Affinity
 
