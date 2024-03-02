@@ -24,7 +24,10 @@ jobs:
           python-version: 3.12
 
       - name: run python file
-        run: python python1.py
+        run: |
+          sh ls -ltr
+          cd .github/workflows
+          python python1.py
 # name: This is My first git Hub
 
 # pipeline{
