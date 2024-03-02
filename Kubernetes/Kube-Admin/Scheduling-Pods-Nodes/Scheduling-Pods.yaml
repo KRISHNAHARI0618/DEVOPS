@@ -1,7 +1,7 @@
 Scheduling Notes:
 
 Scheduling: Making sure that pods are matched with node spec so that kubelet can run them
-Preemption: Process of termination one or more pods with lower priority so that high priority pods can run on them
+Preemption: Process of termination pods with lower priority so that high priority pods can run on them
 Eviction: Process of Terminating one or more pods on Nodes
 Pod Disruption: Process by which pods on Nodes are terminated either voluntarily or involuntarily
 1: Voluntarily Disruption: Are started intentionally by application owners or Cluster administrators
