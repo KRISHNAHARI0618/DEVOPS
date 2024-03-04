@@ -4,7 +4,7 @@ metadata:
   name: web
   namespace: roboshop
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: web
     tier: web
@@ -12,5 +12,5 @@ spec:
   ports:
   - name: web-port
     protocol: TCP
-    port: 81 # this port belongs to service
+    port: 80 # this port belongs to service
     targetPort: 80 # this port belongs to container
