@@ -12,5 +12,5 @@ spec:
   ports:
   - name: web-port
     protocol: TCP
-    port: 80 # this port belongs to service
+    port: 81 # this port belongs to service
     targetPort: 80 # this port belongs to container
