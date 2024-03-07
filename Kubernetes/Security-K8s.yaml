@@ -1,6 +1,7 @@
 Security is the prime concern in the kubernetes
 Security :
 Authentication and Authorization
+
 Authentication: Who Can Access what ?
 can be done using the Different methods
 1: Username and Passwords
