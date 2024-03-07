@@ -2,23 +2,23 @@ Object Oriented Programming Language: OOPS
  Python is Structure and Object Oriented
 
 OOPs Concepts:
-  Class 
+  Class
   Objects
   Inheritance
   Polymorphism
   Overloading
 
-Class:  A Class is a collection of variable and methods 
+Class:  A Class is a collection of variable and methods
   A group of objects represented in a single entity is called Class
   a "blueprint" for creating objects.
   Collections of Variables(attributes)  and Methods(Behavoir)
   Logical Entity
-  Does Not occupy space in the memory 
+  Does Not occupy space in the memory
 Objets:
-  It occupies space in the memory 
+  It occupies space in the memory
   An instance of the class
   It is a Physical Entity
-for one class we can create multiple ojects but ojects are independent of each other 
+for one class we can create multiple ojects but ojects are independent of each other
 
 Methods: (Functions)
 
@@ -29,15 +29,15 @@ Ouside Class: we call it as Function
 
 Method : A function creating inside a class is called Methods
 
-class 
+class
 
 There are : 2 : # Type of Methods can declare inside the class
 
 1: Static Method (We can call directly call using the class)
-  To make the method static we need to mention  : @staticMethod  
+  To make the method static we need to mention  : @staticMethod
 2: Instance Method (we can call the function through object)
 
-Types of Variables: 
+Types of Variables:
   1: Class Variables
   2: Global Variables
   3: Local Variables
@@ -49,7 +49,7 @@ self.<variablename> : --> Class variables to access inside class
 
 Method   VS   Constructor :
 
-Method we can give any name 
+Method we can give any name
 Method will return values
 Method can take the arguments and parameters
 Methods can be invoking using objects
@@ -61,8 +61,7 @@ Contructor will be called at the time of object Creation
 
 Constructor: As same a class to used for classes
 
-__init__(self): This is a Contructor 
-
+__init__(self): This is a Contructor
 
 
 

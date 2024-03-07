@@ -62,3 +62,10 @@ pattern(5)
 
 
 # for i in range(start,stop,increment)
+
+
+# cubes:
+
+return_cubes = lambda x : [pow(i,1) for i in range(0,x+1,3)]
+print(return_cubes(10))
+

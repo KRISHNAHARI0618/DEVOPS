@@ -12,11 +12,11 @@ for i in range(len(array2)):
 
 print(" \n  ********* \n  ")
 
-
 def printArray():
     for i in range(len(array1)):
         array_id = id(array1[i])
         print(i, array_id)
 
-
 printArray()
+
+
