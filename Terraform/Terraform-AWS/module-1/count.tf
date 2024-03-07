@@ -6,6 +6,7 @@ resource "aws_instance" "jenkins1" {
   security_groups = [ aws_security_group.allow-all.name ]
 }
 
+# resource "aws"
 # Loops
 # Count = 10
 # instance_type = var.instance_name == "MongoDB" || var.instance_name == "SQL" ? "t3.medium" : "t2.micro"
