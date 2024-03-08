@@ -266,6 +266,15 @@ Structs:
 - These are mapped together different types of data types
 - The Maps which is used to store different data types in grouped order is called the Structs
 
+Structs are like Dictionary in Python
+it will store multple data types
+
+struct format is like
+
+tyep <struct_name> struct {
+    // type of fields
+}
+
 
 
 
