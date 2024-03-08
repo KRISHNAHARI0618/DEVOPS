@@ -1,8 +1,6 @@
-# Day - 03 Video:
+# Day-03 Video:
 Resources: Creating the VMs,Databases , Servers is called Resources
-
 Resource Manager: Manages/Create all the resources based on the request provided by the DevOps Engineer
-
 Resource Group: Grouping of Resources and Manage below parameters
 Access
 Permission
@@ -11,6 +9,5 @@ Auditing
 Cost Management
 Locking
 Policies
-
 
 Grouping the Resource will make efficient towards consistent deployment
