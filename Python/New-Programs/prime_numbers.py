@@ -34,3 +34,26 @@ for num in range(start,end+1):
       print(num,end=" ")
 
   # print(num,end=" ")
+# Add PrimeNumbers to List
+print("\n")
+primeNumbers = []
+
+start = int(input("Where to start: "))
+end = int(input("Where to End: "))
+
+for num in range(start,end):
+  if num>1:
+    for i in range(2,num):
+      if num % i == 0:
+        break
+    else:
+      primeNumbers.append(num)
+print(primeNumbers)
+# print("\n")
+sum = 0
+for i in primeNumbers:
+  sum = sum + i
+print(sum)
+
+# print("\n")
+

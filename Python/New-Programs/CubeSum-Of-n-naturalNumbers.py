@@ -18,4 +18,22 @@ def cubes_number(n):
 
 print(cubes_number(7))
 
+even_Cubes = []
+odd_Cubes = []
+
+def cubes(n):
+  x = 0
+  if n % 2 == 0:
+    x = (n/2)*(n+1)
+    even_Cubes.append(x)
+  else:
+    x = ((n+1)/2)*n
+    odd_Cubes.append(x)
+  return (int)(x*x)
+
+print(cubes(10))
+
+print(even_Cubes)
+print(odd_Cubes)
+
 
