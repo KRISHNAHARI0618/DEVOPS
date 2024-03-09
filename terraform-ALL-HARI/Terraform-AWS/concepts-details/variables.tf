@@ -15,7 +15,7 @@ variable "sg_cidr" {
   description = "This is Allowing All Values"
 }
 
-variable "for_each_instances" {
+variable "instances" {
   type = map
   description = "This is For Each Instance Loop"
   default = {

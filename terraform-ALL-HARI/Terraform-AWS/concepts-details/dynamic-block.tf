@@ -21,7 +21,6 @@ resource "aws_security_group" "allow-all" {
           to_port   = ingress.value.to_port
           cidr_blocks = var.sg_cidr
     }
-
   }
   egress {
     from_port   = 0
