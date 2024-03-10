@@ -1,5 +1,4 @@
 number = 32
-
 print(number)
 flag = False
 for i in range(2,number):
@@ -57,3 +56,9 @@ print(sum)
 
 # print("\n")
 
+
+class main:
+  def __init__(self) -> None:
+    print("This is Default class Method")
+
+main1 = main()
