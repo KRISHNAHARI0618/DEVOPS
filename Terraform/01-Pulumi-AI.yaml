@@ -9,7 +9,7 @@ Pulumi Architecture :
 5: Pulumi Service -->
 6: Cloud Storage --> S3 Bucket
 
-Pulumi Project
+Pulumi-Project:
   PProgram
     Resources
   Stacks
