@@ -1,9 +1,9 @@
 Jenkins Interview Questions:
 
 What is Jenkins:
-Jenkins is a self-contained, open source automation server which can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.
-It is Written in java
-It Has More built in plugings which is extensible use for continuous integration
+    Jenkins is a self-contained, open source automation server which can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.
+    It is Written in java
+    It Has More built in plugings which is extensible use for continuous integration
 
 Define The Process Process of Jenkins:
 1: Commit The Changes
@@ -12,20 +12,20 @@ Define The Process Process of Jenkins:
 4: generate Feedback
 
 Benefits of Jenkins:
-1: Cache Build Failures
-2: Automatic build report notification
-3: Achieves Continuous Integration
-4: Automation of Maven Project
-5: Easy Tracking of bugs
-1: Version Control
-2: Reusability
-3: Parallel Execution
-4: Visualization
-5: Shared Libraries
-6: Secrets Management
-7: Multiple Agents
-8: Open Source
-9: Multi-Branch
+    1: Cache Build Failures
+    2: Automatic build report notification
+    3: Achieves Continuous Integration
+    4: Automation of Maven Project
+    5: Easy Tracking of bugs
+    6: Version Control
+    7: Reusability
+    8: Parallel Execution
+    9: Visualization
+    10: Shared Libraries
+    11: Secrets Management
+    12: Multiple Agents
+    13: Open Source
+    14: Multi-Branch
 
 Pre-Requisites & Main Components integrated with:
 1: Java and Git
@@ -34,28 +34,29 @@ What is Maven ? Benefit of Integrating with jenkins:
 1: Build Management Tool
 
 How will you define Post Section in jenkins:
-What is Post Section:
-Post is a Section which contains several additional steps that might execute after the completion of the pipeline
 
-Cleaning the Workspace
-Mailing the user based on results
-Always fail
-always success
-changed
-aborted
-scripted
+What is Post Section:
+    Post is a Section which contains several additional steps that might execute after the completion of the pipeline
+    Cleaning the Workspace
+    Mailing the user based on results
+    Always fail
+    always success
+    changed
+    aborted
+    scripted
 
 How to do parameters in jenkins:
-Parameters are like key value apirs used to support various use cases while running the jenkins pipelines
-1: there is parameters sections
-2: There are different parameters
-  1: Password
-  2: String
-  3: Boolean
-  4: text
-  5: Choice
+    0: Parameters are like key value apirs used to support various use cases while running the jenkins pipelines
+    1: there is parameters sections
+    2: There are different parameters
+    3: Password
+    4: String
+    5: Boolean
+    6: text
+    7: Choice
+
 parameters {
-  string (name: 'hari',defaultValue: 'hari_vardhan', description: 'Hello To everyone')
+    string (name: 'hari',defaultValue: 'hari_vardhan', description: 'Hello To everyone')
 }
 
 How does Jenkins Authenticate users:
@@ -365,15 +366,15 @@ Explain Complete CI-CD Setup In your Project:
 
 From: GitHub
 To: Kubernetes
-1: Git Checkout
-2: Continuous Integration
-  1: Build and Unit Text
-  2: Code Scanning - SonarQube
-  3: Build Artifacts - Code Scan
-  4: Image Building
-  5: Image Scanning
-  6: Image Push
-3: Build Tools: NpM for Node, Maven for Java, PyBuilder for Python
+    1: Git Checkout
+    2: Continuous Integration
+    1: Build and Unit Text
+    2: Code Scanning - SonarQube
+    3: Build Artifacts - Code Scan
+    4: Image Building
+    5: Image Scanning
+    6: Image Push
+3: Build Tools: NpM for Node, Maven for Java, PyBuilder for Python,Go mod For go lang
 4: Helm Repository Updates in different GitHub Repo
 5: Deploy in Kubernetes
 
@@ -388,7 +389,8 @@ OutOfMemory Issues:
 Docker Agent is not configured in Jenkins:
 1: i have not added jenkins user in docker group then i have faced issue while building image
 
-1: Job Failures: Issue in build jobs or pipelines are failing
+1: Job Failures:
+    Issue in build jobs or pipelines are failing
 2: Performance Issues: Jenkins is slow or unresponsive.
 3: Node Connectivity: SSH and Egress is not allowed
 Nodes (build agents) are not connecting or going offline.
