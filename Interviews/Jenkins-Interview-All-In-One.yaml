@@ -385,25 +385,25 @@ MultiBranch pipeline we use choice parameters
 OutOfMemory Issues:
 1: Jenkins id growing in data size requiring a bigger heap space in this case you just want to give it a bigger heap
 2: If the jenkins are generating large amount of data
-
+---
 Docker Agent is not configured in Jenkins:
 1: i have not added jenkins user in docker group then i have faced issue while building image
+---
+    1: Job Failures: Issue in build jobs or pipelines are failing
+    2: Performance Issues:
+    Jenkins is slow or unresponsive.
+    3: Node Connectivity: SSH and Egress is not allowed
+    Nodes (build agents) are not connecting or going offline.
+    4: Plugin Compatibility: Plugins are not working or causing issues.
+    5: Authentication and Authorization: Users are unable to log in or encounter permission issues.
+    6: Build Environment Issues: Builds are failing due to missing dependencies or incorrect environment settings.
+    7: Jenkins Upgrade Issues: Problems arise after upgrading Jenkins.
+    8: Disk Space Issues: Jenkins is running out of disk space.
+    9: Logging and Debugging: Unable to identify the root cause of a problem.
+    10: Security Vulnerabilities: Security vulnerabilities are identified in Jenkins.
 
-1: Job Failures:
-    Issue in build jobs or pipelines are failing
-2: Performance Issues: Jenkins is slow or unresponsive.
-3: Node Connectivity: SSH and Egress is not allowed
-Nodes (build agents) are not connecting or going offline.
-4: Plugin Compatibility: Plugins are not working or causing issues.
-5: Authentication and Authorization: Users are unable to log in or encounter permission issues.
-6: Build Environment Issues: Builds are failing due to missing dependencies or incorrect environment settings.
-7: Jenkins Upgrade Issues: Problems arise after upgrading Jenkins.
-8: Disk Space Issues: Jenkins is running out of disk space.
-9: Logging and Debugging: Unable to identify the root cause of a problem.
-10: Security Vulnerabilities: Security vulnerabilities are identified in Jenkins.
-
-1: OutOfMemoryError: Your Jenkins may encounter out of memory issue due to installing heavy plugins etc..
-2: One time we got issue with out of memory when we created the machine with less memory then the jobs got not executed due to java
+    1: OutOfMemoryError: Your Jenkins may encounter out of memory issue due to installing heavy plugins etc..
+    2: One time we got issue with out of memory when we created the machine with less memory then the jobs got not executed due to java
 
 cmd ["java", "-Xmx2048m", "-Xms512m", "-jar", "jenkins.war"]
 
