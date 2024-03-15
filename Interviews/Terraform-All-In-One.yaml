@@ -1,13 +1,15 @@
 What is IaC: Infrastructure as code
 
 What is Terraform:
+0: Terraform is an infrastructure as a code tool that lets you to build,change and version cloud and on-prem safely and effectively
 1: Infra structure as a code automation tool
 2: Open Source designed by Hashi-Corp written in go language
 3: It allows user to create infra with code
-4: It is just a Command Line Tool
+4: It has a Command Line Tool and Terraform Cloud to store the modules privately
 
+---
 What are advantages of Terraform:
-0: As it is A Code we can write and deploy
+0: As it is A Code we can write,deploy amd  destroy
 1: Version Control
 2: Consistent InfraStructure (Dev,QA,Prod,UAT,pre-PROD)
 3: We can DO CRUD Operations
@@ -16,42 +18,82 @@ What are advantages of Terraform:
 6: Dependency Management
 7: Modules (Don't Repeat Yourself)
 8: Terraform Is Declarative Scripting
+---
+Variables and Outputs:
+
+1: | Variables
+- Servers as Parameters for a Terraform Modukes/code.
+- So Users can customize behavior without editing the the source code
+2: | Outputs
+- Return Values for a terraform module
+3: | Local Values
+- Convience feature for assigning a short name to an expression
+- it is especially useful when you have complec expressions or repeated values
+
+---
+Expressions:
+1: Version Constraints:
+- we can use the operators to control the version like below
+- version = ">=1.2.0, <2.0.0"
+- there are other operators as well in terraform
+- =,!=,>,<,>=,<= etc..
+2: Dynamic Blocks:
+- When you want to create a nested blocks we use dynamic blocks
+
+---
+Functions:
+1: File Function: used to copy the file from local to resources while creating the resource
+2: Split Function : Split funtion is used to split the string based on the delimiters
+3: Element Function : Used to retrieve a single element from the list or tuple
+- element(list or tuple,index)
+4: Slice Function: Slice is used to select the part of list
+5: Length Function: Length will get the size of the list
+6: LookUp Function: Value of a key in a map
+7: Url encode Function: applies URL encoding to a given string
 
 Hashi-Corp Configuration Language:
-1: Variables
+1: Variables:
+  - Types of Variables
+  - String
+  - bool
+  - number
+  - Map
+  - List
 2: Loops
 3: Locals
 4: Data Types
 5: Functions
 6: Modules
+7: Expressions
 
+---
 Why Terraform:
 1: Terraform works on the principle of api as code
 2: Interacts with Low Level Code
 3: Supports multiple Cloud Providers/Hybrid Cloud
 4: Written in Go language
 5: HCL language/Json
-
+---
 What are essential aspects of terraform:
 1: A console to validate the functions
 2: Interpolation is supported through a configuration language
 3: A Module count maintains track of how many resources are installed on the infrastructures
-
+---
 What are modules in terraform:
 1: Logical Grouping of terraform resources
 2: one module can run multiple environment/teams
 3: One Module for multiple Teams
 4: Commonly repeated things should be allocated in single file
-
+---
 What is state file in terraform:
 1: Keeps Track of resources are managing
 2: Terraform makes copy of which resources we have created
-
+---
 What is Terraform D:
-Terraform D is a windows plugin that works with almost all in-service systems. By Default Terraform init looks for plugins in the following directory
+  Terraform D is a windows plugin that works with almost all in-service systems. By Default Terraform init looks for plugins in the following directory
 
 What is the purpose of Null Resources:
-A standard resource library is implemented by null resources but no further action is done
+  A standard resource library is implemented by null resources but no further action is done
 
 Most Common CLI Commands:
 
@@ -66,12 +108,12 @@ Most Common CLI Commands:
 
 What is terraform backend:
 1: Where ever we are storing our terraform state file is called backend
-
+---
 What is terraform remote backend:
 1: To remove conflicts between your team and you we will store this state file in Remote backend
 2: And we store that in some where in Cloud and enables locking it
 3: so that if one user is creating resources using that remote backend statefile he will get error like some has locked the file or creating the infra
-
+---
 How do you handle secrets in terraform:
 1: Using Environment variables
 2: Using Hashi-Corp Vault
@@ -81,8 +123,8 @@ How do you handle secrets in terraform:
 6: Secure remote backend
 
 What is resource graph in terraform:
-terraform graph is a dependency graph
-it is actually a dependency plan
+  terraform graph is a dependency graph
+  it is actually a dependency plan
 
 What is Terraform state Locking:
 when you don't want to run multiple people at a time
@@ -236,8 +278,7 @@ locals "aws_instance" {
   value =
 }
 
-What are local Variable:
-These are type of Variable where we cannot
+What are local Variable: These are type of Variable where we cannot
 
 How to Delete particular resources in terraform:
 1: terraform destroy -target=resource.name
@@ -393,7 +434,6 @@ Terraform is platform agnostic
 4: terraform apply -var-file=dev.tfvars
 
 Scenarios:
-
 End To End Terraform Flow
 1: First Write Tf files
 2: Terraform init
