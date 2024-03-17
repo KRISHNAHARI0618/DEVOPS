@@ -31,6 +31,10 @@ Variables and Outputs:
 - it is especially useful when you have complec expressions or repeated values
 
 ---
+Terragrunt Tutoroial:
+- Terragrunt is a thin wrapper for Terraform that provides extra tools for working with multiple Terraform modules, remote state, and locking
+-
+---
 Expressions:
 1: Version Constraints:
 - we can use the operators to control the version like below
@@ -50,6 +54,15 @@ Functions:
 5: Length Function: Length will get the size of the list
 6: LookUp Function: Value of a key in a map
 7: Url encode Function: applies URL encoding to a given string
+8: length (create based on availability zones)
+9: slice (create based on slice)
+10: merge (variables)
+11: min
+12: max
+13: base64encode
+14: base64decode
+15: concatenation: two or more list combines into a single task
+16: contains:
 
 Hashi-Corp Configuration Language:
 1: Variables:
@@ -462,12 +475,14 @@ terraform destroy -target=aws_instance.my_instance
 
 # Explain the various types of meta-arguments:
 
-Meta arguments changes the default behaviors of terraform configuration
+Meta arguments:
+changes the default behaviors of terraform configuration
 
 1: depends_on[list of resources]
 2: count
 3: for_each
 4: provider
+
 provider "aws" {
   alias  = "europe"
   region = "europe-west1"
@@ -493,21 +508,6 @@ terraform apply --force-unlock
 
 # Terraform Refresh
 1: When ever there is a mismatch in terraform statefile we run this command
-
-Built-In Functions:
-
-lookup(map,key,default) : Returns default value if the key/value not present
-lookup({"a" = 1, "b" = 2}, "b", 0)  # Result: 2
-lookup({"a" = 1, "b" = 2}, "c", 0)  # Result: 0
-
-tolist(set) : Converts set to list
-tolist(["a", "b", "c"])  # Result: ["a", "b", "c"]
-
-lower(string) : Converts string lower to upper
-upper(string) : Converts string upper to lower
-
-Element(list,index): return element at given index
-element(["a", "b", "c"], 1)  # Result: "b"
 
 # Interview Session - 1:
 
@@ -604,7 +604,7 @@ Configuration Syntax in terraform:
 1: Arguments key value pairs
 2: Blocks are used to mention resources
 3: identifiers = terraform specific constructs like resources,input variables,etc .. are all identifiers
-4: Comments # // /**/
+4: Comments
 
 Terraform Cloud:
 1: Manages StateFiles in Terraform Cloud
@@ -741,7 +741,7 @@ data "aws_ami" "latest_amazon_linux" {
   }
 }
 
-# Resources
+# Resources LifeCycle
 
 resource "aws_instance" "ec2_instances" {
   count         = length(var.instance_types)
@@ -758,7 +758,6 @@ resource "aws_instance" "ec2_instances" {
 }
 
 Depends on :
-
 1: Reduced Parallelism
 2: Hard-Coding Dependencies
 3: Increased Complexity
@@ -834,23 +833,11 @@ Different Types of Build in Functions:
 8: Ip Network Functions
 9: Type Conversion Functions
 
-Most Used Functions in Terraform:
-1: length (create based on availability zones)
-2: slice (create based on slice)
-3: merge (variables)
-4: min
-5: max
-6: base64encode
-7: base64decode
-8: concatenation: two or more list combines into a single task
-9: contains:
-
 Diff Between For_each and Dynamic block:
 both are used to create a multiple instance of a nested block
 for_each will work with all kind of data types
 list,sets,maps,objects
 Dynamic Block will work for list and sets
-
 for each is easy when compared to Dynamic Block
 
 provider "aws" {
@@ -871,8 +858,41 @@ resources "ec_instance" "first" {
   }
 }
 
-local {
-  default = {
-
-  }
+locals {
+  coordinates = (10,20,30)
+  y_coordinates = element(local.coordinates,1)
 }
+
+---
+
+What are private Modules:
+1: we declare the configuration files in the one repository push it in the github
+2: in another folder we calll them to create a resources with the provider block
+
+Types of Modules:
+1: Root module
+2: Child Module
+3: Published Modules
+4: Using Modules
+5: Developing Modules
+
+Folder Structure or Module:
+1: Licence
+2: ReadMe.md
+3: main.tf
+4: variables.tf
+5: outputs.tf
+
+Naming Convention for Terraform Cloud:
+1: terraform-provider-cloud
+
+Terraform State Commands:
+1: terraform state list
+2: terraform state pull
+3: terraform state push
+4: terraform state refresh
+5: terraform state replace-provider old-provider new-provider
+
+
+
+

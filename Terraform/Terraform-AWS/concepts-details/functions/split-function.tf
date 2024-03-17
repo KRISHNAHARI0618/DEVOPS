@@ -13,7 +13,7 @@ output "first_fruit" {
   value = local.fruit_list[0]
 }
 
-resource "aws_instance" "split_server" {
-  ami = local.ami
-  instance_type = local.instance_type
-}
+# resource "aws_instance" "split_server" {
+#   ami = local.ami
+#   instance_type = local.instance_type
+# }

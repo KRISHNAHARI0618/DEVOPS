@@ -161,3 +161,17 @@ terraform apply -var-file=DEV/dev.tfvars -auto-approve
 
 
 Elastic Ip Address:
+
+---
+AWS Direct Connect:
+- Direct Connect
+- Site-To-Site VPN
+When you need to connect your on-prem Data Center to your amazon vpc we need to use Amazon Direct Connect As a Primary Conection and As A BackUp Connect we use Site-To -Site VPN Connection
+---
+AWS Direct Connect Gateway:
+- when you need to connect multiple aws vpcs in different aws account in same aws account we can use aws Direct Connect Gateway API
+---
+AWS Transit GateWay:
+- When you need to connect multiple aws vpcs in a same way as like peering in a single connection we use AWS Transit gateway as HUB - and star spoke connection
+---
+

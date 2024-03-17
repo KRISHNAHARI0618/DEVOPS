@@ -87,4 +87,25 @@ def fun_gcd(a,b):
 print(fun_gcd(10,20))
 
 
+# Gcd Program
+
+def gcd_function(a,b):
+  while a != b:
+    if a > b:
+      a = a - b
+    else:
+      b = b - a
+  return a
+
+print(gcd_function(12,34))
+
+def func_gcd1(a,b):
+  if b == 0:
+    return a
+  else:
+    return func_gcd1(b,a%b)
+print(func_gcd1(10,12))
+
+
+
 
