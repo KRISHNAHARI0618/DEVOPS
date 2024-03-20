@@ -64,3 +64,42 @@
 3:08:50 How do you take Jenkins backup?
 3:11:13 Importance of post block?
 3:13:31 Can we have job for pr and once merge is done the source branch should be deleted?
+
+1. Explain your current roles in your project.
+2. How you deploy an application to kubernetes?
+3. How you make sure your code is secure in the production?
+4. What tools you used for security side for both code and infra? What standards/benchmarks you follow?
+5. How and what things do you monitor your application? Which tools you use?
+6. Suppose, you are using different monitoring tools like Prometheus, Azure log analytics, DataDog. You are asked to use the cost effective monitoring tool. How you analyze and how you decide which one can we go with?
+7. How you write your own custom ansible plugins which are not available in internet?
+8. Write a program how do you get the api response from "api.github.com" in display the data/fields?
+9. If you are deploying a group of microservices (multiple microservices) with Helm charts, what are the challenges that we can face?
+10. What is monolithic application? How do you migrate to microservices?
+11. What is your current role in your team and where do you expect YOU in the couple of years?
+
+1: First Introduce Yourself
+2: About CI-CD Pipeline
+3: About Fargate and ECS and EC2 Instance
+4: About Cost Optimization in EKS and ECS
+5: About VPC,Public Subnets,Private Subnets,VPC Peering
+6: How to Connect With Private Subnet ?
+7: Bastion Host Vs Other Server to Connect Private Instances
+8: How To get Logs From server?
+9: When to use a Lambda function, and when not?
+https://jeromevdl.medium.com/when-to-use-a-lambda-function-and-when-not-9a225e6dd2dd
+10: How will you watch the logs from crashed Machines
+11: What is High Availability ?
+12: About Security Best Practices atleast 5
+13: About Security Products
+14: What sort of information will get from sonar qube ?
+
+Scaling Options :
+- Horizontal AutoScaling
+- Vertical Autoscaling
+
+
+
+Connect EC2 Instances:
+ssh -i ~/.ssh/id_rsa ec2-user@44.204.73.249
+
+
