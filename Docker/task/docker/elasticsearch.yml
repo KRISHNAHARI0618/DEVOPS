@@ -1,0 +1,4 @@
+
+cluster.name: "docker-objectrocket"
+network.host: 123.456.789
+http.port: 9200

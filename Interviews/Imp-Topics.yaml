@@ -1,4 +1,0 @@
-Blob - Unstructured information such as CI/CD log files, CI/CD artifacts, Terraform Statefile e.t.c.,.
-File - Kubernetes volume that is accessed by multiple Kubernetes pods.
-Queues - Store the messages to send out notifications to report failures, success of pipelines or serverless functions.
-Tables - Any kind of key-value pair data that has to be stored.
