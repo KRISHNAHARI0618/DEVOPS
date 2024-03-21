@@ -1,4 +1,0 @@
-pod
-Configmap
-
-Storage Class
