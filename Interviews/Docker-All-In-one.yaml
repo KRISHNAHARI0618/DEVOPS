@@ -98,15 +98,6 @@ How to Configure Private Repository:
 1: Create a Repository in
 /etc/docker/daemon.json --> add the ip address/
 
-Types of Networks in Docker:
-1: Bridge Network Default &
-2: Host Network
-3: Overlay Network 2
-4: None Network
-5: Macvlan Network
-
-
-
 Networking --> Communication between two hosts/devices over wired /wireless
 Docker:
 - Docker is Platform where it implements the Containerization
@@ -120,10 +111,12 @@ How Containers will communicate with Host Systems:
 - Docker will create one network called Virtual etho 0 that is docker0 ---> that will connect with the Host eth0 and makes the communication this is called bridge networking
 - Virtual ethernet == Docker0.
 
-There are three Types of Networking in Docker Containers:
-- Bridge Networking
-- Host Networking
-- OverLay Networking (Docker Swarm)
+Types of Networks in Docker:
+1: Bridge Network Default &
+2: Host Network
+3: Overlay Network 2
+4: None Network
+5: Macvlan Network
 
 Host(eth0) --> Docker0 --> veth0 --> Docker(eth0)
 
@@ -198,7 +191,7 @@ Container with jenkins and new joine restarts the container and we cant see any 
 # Most of the times when we start the containers and it does not start correctly how to trouble shoot:
 
 1: Check the docker logs: docker logs <container-id>
-2: Check the container status: docker ps -a
+2: Check the container status: docker ps -a (paused,ecxited,started,stopped etcc..)
 3: Inspect Container configuration: docker inspect <container-id> # Like environment variables, volumes, and network configurations.
 4: Check the resources constraints: docker stats <container-id> # Like CPU memory etc
 5: Check the events: docker events
@@ -262,7 +255,7 @@ The request will send to Docker daemon it will take all the files to remove all 
 2: To remove all .git files
 3: To remove .tf-vars etc..
 
-Docker Delete all the Stopped Containers:
+Delete all the Stopped Containers:
 docker rm -f $(docker ps -a)
 docker container prune
 
@@ -333,9 +326,7 @@ docker images --filter labels=key=value
 docker inspect <image-id> --> This can inspect all the details about the images
 
 Standard input : this is the file handle that your process reads to get information from you.
-
 Standard output :  your process writes conventional output to this file handle.
-
 Standard error : your process writes diagnostic output to this file handle.
 
 Expose  :
@@ -367,10 +358,29 @@ Save one or more images to a tar archive (streamed to STDOUT by default)
 Docker Load:
 Load an image from a tar archive
 Docker Can be used in production
-
 Docker Stats: docker statistics used to To monitor cpu and memory the docker in production
-
 Docker Events: is used to monitor the eveents take place in the docker daemon
+
+Instruction	Description:
+ADD:	Add local or remote files and directories.
+ARG:	Use build-time variables.
+CMD:	Specify default commands.
+COPY:	Copy files and directories.
+ENTRYPOINT:	Specify default executable.
+ENV:	Set environment variables.
+EXPOSE:	Describe which ports your application is listening on.
+FROM:	Create a new build stage from a base image.
+HEALTHCHECK:	Check a container's health on startup.
+LABEL:	Add metadata to an image.
+MAINTAINER:	Specify the author of an image.
+ONBUILD:	Specify instructions for when the image is used in a build.
+RUN:	Execute build commands.
+SHELL:	Set the default shell of an image.
+STOPSIGNAL:	Specify the system call signal for exiting a container.
+USER:	Set user and group ID.
+VOLUME:	Create volume mounts.
+WORKDIR:	Change working directory.
+NETWORK: Cretae a network for docker
 
 Docker Compose: docker compose will always run in the dependency order
 dependency :
@@ -487,7 +497,7 @@ Docker Best Practices:
 11: Avoid HardCoded Credentials (Use Environment Variables)
 12: use Non-Root User (nonrootuser)
 13: Specify The ports for Containers
-14: USE Entrypoint to set the default process
+14: USE Entrypoint to set the default process/executable
 15: Creating Named Volumes for each container and persist logs of each container to central logging system
 
 # Order Matters in Caching
@@ -533,15 +543,10 @@ Docker HUB --> Where Docker Images are build and pushed for public use
 Docker Layers:
 Once we create the image we cannot change image
 docker image is immutable and static in nature
-
 Each Instruction in the Docker file is Called the Docker layer.
-
 Each instruction will create one image and one mini container will create.
-
 There is one component will be there to run and build everything that is docker engine
-
 One layer will create one image and one container on top of each container the next instructions will be run when the instruction moves to next then previous mini container created by Docker Engine will be destroyed.
-
 
 Docker is Located in :
 /var/lib/docker/ : All information related to docker will be stored here
