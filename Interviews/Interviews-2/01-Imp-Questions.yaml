@@ -12,7 +12,7 @@
 22:06 What is exit status?
 23:50 Given machine, how will you identify which machine it is?
 
-24:39 Git/Github Questions
+24:39 Git/Github Questions:
 24:41 What is git reset ? Types of reset ?
 33:29 How to delete local branch and remote branch in git ?
 36:44 Difference between git diff and git status ?
@@ -23,7 +23,8 @@
 59:11 What PR (Pull request) is? what's the importance of PR?
 1:04:01 Which version of git you have used?
 1:04:45 What is git squash?
-1:11:00 Command to list all commits?
+1:11:00 Command to list all commits? 
+
 1:11:38 - Maven Questions
 1:11:40 What are things you need to set, if you want download dependency from private repository ?
 1:16:34 Command to skip the test cases in maven
@@ -44,6 +45,7 @@
 1:59:45 Is it good to use docker compose in production?
 2:00:50 How to parametrize base image tag?
 2:04:16 Building Dockerfile in directory which has large file is good practice?
+
 2:05:08 - Ansible Questions
 2:05:09 Why ansible ? What makes ansible powerful than other tools like chef and puppet?
 2:11:17 5 modules that you have worked on? Can we create custom module ? ( doc - https://docs.ansible.com/ansible/2.3/... )
@@ -52,6 +54,7 @@
 2:22:22 How to handle prompts with ansible playbook?
 2:29:19 What is ansible galaxy?
 2:30:40 What are adhoc commands?
+
 2:33:14 - Jenkins Questions
 2:33:15 How to set Jenkins build to fail based specific word in console output ?
 2:39:35 What are active and reactive parameters (Dynamic parameterization) in Jenkins ?
@@ -100,9 +103,6 @@ Blob - Unstructured information such as CI/CD log files, CI/CD artifacts, Terraf
 File - Kubernetes volume that is accessed by multiple Kubernetes pods.
 Queues - Store the messages to send out notifications to report failures, success of pipelines or serverless functions.
 Tables - Any kind of key-value pair data that has to be stored.
-
-
-
 
 Connect EC2 Instances:
 ssh -i ~/.ssh/id_rsa ec2-user@44.204.73.249

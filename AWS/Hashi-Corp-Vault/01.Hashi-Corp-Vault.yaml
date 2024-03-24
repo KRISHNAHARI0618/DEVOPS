@@ -21,8 +21,7 @@ There are four important points :
 
 Staring The vault Server:
 
-Step 1 : CLI Command for starting the server
-- vault server -dev
+Step 1 : CLI Command for starting the server  - vault server -dev
 
 Step 2 : Set VAULT_ADDR by exporting to environment variable - export VAULT_ADDR='http://127.0.0.1:8200'
 
