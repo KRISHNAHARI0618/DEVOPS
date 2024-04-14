@@ -4,6 +4,7 @@
 - People are moving towards Microservices
 
 * Docker Vs Kubernetes *
+[Kuberenetes 100 Questions](https://medium.com/@jaya.surya8068/top-100-kubernetes-interview-questions-and-answer-5adb4c427b17)
 
 # Docker:
 - Container Platform where it supports the building the containers
