@@ -19,4 +19,12 @@ Introductions of GitHub-Actions:
 - GitHub Hosted Runners -- Hosted By GitHub
 - Self-Hosted Runners -- Hosted By user
 
+Events:
+- WorkFlow
+  - job1 ----------------------
+    - step1                    | --> Steps will run sequence
+    - steps2                   | --> Jobs will Run parallel
+    - steps3                   |
+  - job2 ----------------------
+
 

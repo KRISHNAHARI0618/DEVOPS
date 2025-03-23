@@ -4,7 +4,6 @@ Day-05 : Provisioners
 
 InfraStructure as a Code:
 - Infrastructure as code is the process of managing and provisioning computer data centers through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools.
-Ad
 DevOps Engineer:
 - Create S3 Bucket
 - Terraform uses API As a Code
