@@ -123,3 +123,54 @@ Options:
                          to the default files terraform.tfvars and *.auto.tfvars.
                          Use this option more than once to include more than one
                          variables file.
+
+
+#### Types of Variables:
+- string
+- number
+- map(key:value)
+- tuple (non homogeneous data)
+- list(homogeneous data)
+- set unique values should be passed
+- object to create a own type
+- bool sets true or false
+
+#### Sequence of Variables
+- Environment Varibales will be first
+- Tf Vars file will apply next
+- variable.auto.tfvars file 
+- terraform apply -var "filename=sample.txt"
+- module varibale 
+- file variables
+
+### Dependency :
+- Implicitly
+- Explicitly
+
+#### Life Cycle Rules/Roles
+- it is a meta arguments
+- create_before_destroy
+- prevent_destroy
+- ignore_changes
+- replace_trigger_by
+
+#### Meta Data
+- Depends_On
+- count
+- forEach
+- dynamic Block
+- provider
+- lifecycle
+  - create_before_destroy
+  - ignore_changes
+  - prevent_destroy
+  - replace_triggered_by
+- Custom Conditions
+  - Pre Condition
+  - Post Condition
+
+#### Gcloud Commands to Login
+
+- gcloud auth login `to log in to cloud account`
+- gcloud auth application-default login `To Log Into all Applications/API's via CLI`
+- 
