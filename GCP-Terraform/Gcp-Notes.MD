@@ -174,3 +174,24 @@ Options:
 - gcloud auth login `to log in to cloud account`
 - gcloud auth application-default login `To Log Into all Applications/API's via CLI`
 - 
+
+#### Git Hub Actions for GCP:
+- https://github.com/google-github-actions/auth/tree/main
+
+
+#### Google Cloud Storage 
+- Its a storage account where we can store anything we want
+- we can save data based on our use
+  - Standard: for daily use (front end files)
+  - Nearline : for monthly use 
+  - Coldline : for Quarterly Use
+  - Archive : for yearly use
+- We can protect data based :
+  - Soft delete policy: Default
+  - Object versioning: Disabled
+  - Bucket retention policy: Disabled
+  - Object retention: Disabled
+  - Encryption type: Google-managed
+
+- By default it will come like not accesible via pulic we need to enable to use it 
+- 
