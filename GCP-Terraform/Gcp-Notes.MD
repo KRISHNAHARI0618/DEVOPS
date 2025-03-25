@@ -194,4 +194,14 @@ Options:
   - Encryption type: Google-managed
 
 - By default it will come like not accesible via pulic we need to enable to use it 
-- 
+
+#### To Create VPC:
+- 1:
+  - vpc name
+  - vpc description
+  - maximum transmission unit
+- 2: 
+  - configure network profilfe
+  - zone 
+  - network profile
+

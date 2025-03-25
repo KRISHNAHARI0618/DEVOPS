@@ -20,3 +20,4 @@ variable "names" {
 output "file2" {
   value = split(" ",var.names)
 }
+
