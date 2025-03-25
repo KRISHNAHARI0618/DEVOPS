@@ -63,4 +63,21 @@
     - Redis : Used for caching
     - Application set controller
         - It automates the generation of ArgoCD Applications
-        
+
+### Installations
+- kubectl create namespace argocd
+- kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+- kubectl config set-contexts --current --namespace=argocd
+
+#### Cli
+- Using cli we can do anything we need
+- brew install argocd
+
+### ArgoCD Installation
+- yaml files
+- helm manifests
+- web ui
+- cli
+- argocd app create --source <repo link > --destrination <cluster link>
+
+
