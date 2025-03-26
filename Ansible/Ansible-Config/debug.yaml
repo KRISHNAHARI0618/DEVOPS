@@ -1,4 +1,4 @@
-- name: Just Chacking the messages is printing for not
+- name: Just Checking the messages is printing for not
   hosts: centos2
   become: yes
   vars:

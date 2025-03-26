@@ -1,10 +1,8 @@
-% Ansible:
-is best configuration management tool
+Ansible: is best configuration management tool
 
 ansible -i <ip-address> -m ping -e ansible_user=centos -e ansible_password=password
 
-ping module: used to ping the servers
-it will give pong status
+ping module: used to ping the servers it will give pong status
 
 shell-script: keeping all the commands in a file with variables,loops,variables,etc..
 
@@ -81,10 +79,8 @@ Check the user exists or not
 
 Modules:
 
-cmd:
-when you want to run linux commands directly
-shell:
-extra functionality to run the shell commands
+cmd: when you want to run linux commands directly
+shell: extra functionality to run the shell commands
 
 Tagging In ansible:
 # Run tasks with the "update" tag
