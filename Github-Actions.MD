@@ -8,4 +8,6 @@
 
 - # Git Repositories
   - Local Repository
-  - 
+  - Staging Repository
+  - Global Repository / Remote Repository
+  
