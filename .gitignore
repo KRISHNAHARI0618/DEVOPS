@@ -33,3 +33,6 @@ override.tf.json
 .terraformrc
 terraform.rc
 keys-gcp.json
+.token
+.venv/
+
