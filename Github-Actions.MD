@@ -16,6 +16,13 @@
 - ## Git Branches 
   - branches are like containers which contains commits
   - feature branches
-- ** `rgb(9,105,218)`Git Hub**
+- ** `rgb(9,105,218) Git Hub`**
   - Repositories
+
+### Key Elements
+- **Workflows**
+  - 
+- **Jobs**
+  - 
+- **Steps**
   - 
