@@ -13,3 +13,9 @@
 - ## Git Undo Commits Commands
   - git revert <commit id>
   - git reset --hard <commid id>
+- ## Git Branches 
+  - branches are like containers which contains commits
+  - feature branches
+- **`rgb(9,105,218)`Git Hub**
+  - Repositories
+  - 
